@@ -6,4 +6,13 @@
       <class name="testcases.tc_001"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.tc_001">
+        <methods>
+          <include name="findEmail"/>
+        </methods>
+      </class> <!-- testcases.tc_001 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

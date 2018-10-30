@@ -1,5 +1,7 @@
 package testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +12,7 @@ public class tc_001 {
 	ChromeDriver driver;
 	@Test
 	public void testcase1() {
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		System.setProperty("webdriver.chrome.driver","/Users/neha/Downloads/Download_SW/chromedriver");
 	driver = new ChromeDriver();
 	driver.get("http://www.facebook.com");
@@ -25,6 +28,13 @@ public class tc_001 {
 		
 	}
 
+	@Test
+	public void notSelenium()
+	{
+	
+		System.out.println("This is 3rd and last test case");
+		
+	}
 
 
 }
